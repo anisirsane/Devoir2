@@ -4,8 +4,13 @@ import java.util.Random;
 //notre classe pour la generation de la liste des nombres et l'ebtention de la plus grande valeur.
 public class PlusGrandeValeur {
     private List<Integer> chiffres;
+    /*
+    on genere les nombres avec la fonction random
+    @param choice
+    @return ca retourne rien
+    */
     public void generateNum(int choice){
-        //on genere les nombres avec la fonction random
+        
         Random rand = new Random();
         int max = 100;
         int min = 10;
@@ -21,7 +26,10 @@ public class PlusGrandeValeur {
             System.out.println("tableau["+ i +"] = "+ chiffres.get(i));
         }
     }
-    //recuperation de la plus grande valeur
+    /*recuperation de la plus grande valeur
+    @param rien 
+    @return rien
+    */
     public void PlusGrandeVal(){
         int nbrGrand = chiffres.get(0);
         int indexe = 0;

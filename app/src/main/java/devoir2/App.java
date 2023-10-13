@@ -1,12 +1,14 @@
-/*
-projet      : un exercice pour comparer la plus grande valeur d'une arraylist ou d'une linkedlist
-Version     : 0.1
-Auteur      : Anis Irsane
-Date        : 13-10-2023
-Description : c'est pour apprendre a utiliser les linkedlist et les arrayslist, dans ce cas je fais un exemple
-                        selon les directives donnees dans devoir2
 
- */
+/**
+* <h1>la plus grande valeur dans une liste</h1>
+* <p>ce programme qui affiche un menu a l'utilisateur pour choisr soit l'utilisation d'une arrayList ou bien une Linkedlist
+* puis il genere 15 nombres aleatoires et il trouve la valeur la plus grande entre eux</p>
+
+*
+* @author  Anis Irsane
+* @version 2.0
+* @since   2023-10-13
+*/
 package devoir2;
 
 import java.util.Scanner;
