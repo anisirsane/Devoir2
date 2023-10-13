@@ -2,7 +2,7 @@
 projet      : un exercice pour comparer la plus grande valeur d'une arraylist ou d'une linkedlist
 Version     : 0.1
 Auteur      : Anis Irsane
-Date        : 12-10-2023
+Date        : 13-10-2023
 Description : c'est pour apprendre a utiliser les linkedlist et les arrayslist, dans ce cas je fais un exemple
                         selon les directives donnees dans devoir2
 
@@ -26,25 +26,33 @@ public final class App {
     }
     //la fonction principale
     public static void main(String[] args) {
-    PlusGrandeValeur chiffre = new PlusGrandeValeur();
-    //declaration des variables
-    // switch case
-    switch(choixMenu()){
-        case 1:
-            chiffre.generateNum(1);
-            chiffre.PlusGrandeVal();
-            break;
-        case 2:
-            chiffre.generateNum(2);
-            chiffre.PlusGrandeVal();
-            break;
-        default:
-        /// si l'utilisateur saisie quelque chose autre que les chiffres, il va avoir un message d'erreur 
-        // puis avoir le menu de nouveau
-            System.out.println("erreur, ressayez! ");
-            choixMenu();
-        break;
+        //instanciation de l'objet qu'on a cree
+    PlusGrandeValeur chiffre = new PlusGrandeValeur(); 
+    //on declare un boolean qu'on utilise pour arreter la boucle d'affichage de menu et le fonctionnement de la methode main  
+    boolean var=true;  
+    //puisque la mathode main s'execute seuelemnt une fois lorsqu'onlance notre projet java , 
+    //on doit mettre tous notre code dans une boucle while qui se narrete pas jusq'a l'obtention d'un resultat.   
+    while (var){
+        // switch case
+        switch(choixMenu()){
+            case 1:
+                chiffre.generateNum(1);
+                chiffre.PlusGrandeVal();
+                var = false;
+                break;
+            case 2:
+                chiffre.generateNum(2);
+                chiffre.PlusGrandeVal();
+                var = false;
+                break;
+            default:
+            /// si l'utilisateur saisie quelque chose autre que les chiffres, il va avoir un message d'erreur 
+            // puis avoir le menu de nouveau
+                System.out.println("erreur, ressayez! ");
+                break;
 
+        }
     }
+
 }
 }
